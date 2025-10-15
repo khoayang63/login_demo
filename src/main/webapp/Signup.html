@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            /* CSS không thay đổi, chỉ thêm cho tham chiếu */
+            .center-container { text-align: center; }
+            .signup-form {
+                width: 400px; 
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc; 
+                text-align: left; 
+            }
+            .signup-form label {
+                display: inline-block;
+                width: 120px; 
+                text-align: right;
+                margin-right: 10px;
+            }
+            .signup-form input {
+                width: 200px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center-container">
+            <h2>Đăng Ký Tài Khoản Mới</h2>
+            
+            <form action="signupServlet" method="post" class="signup-form">
+                
+                <label for="firstName">Tên:</label>
+                <input type="text" id="firstName" name="first_name" required><br>
+
+                <label for="lastName">Họ:</label>
+                <input type="text" id="lastName" name="last_name" required><br>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="confirmPassword">Xác nhận MK:</label>
+                <input type="password" id="confirmPassword" name="confirm_password" required><br>
+                
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address"><br>
+
+                <label for="contact">Liên hệ:</label>
+                <input type="text" id="contact" name="contact"><br>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <input type="submit" value="Đăng ký">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

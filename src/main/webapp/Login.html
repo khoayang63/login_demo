@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .center-container {
+                /* Căn giữa toàn bộ văn bản và các phần tử inline */
+                text-align: center;
+                /* Thêm lề trên để đẩy form xuống giữa trang */
+                margin-top: 50px; 
+            }
+            .login-form {
+                /* Căn giữa phần tử khối (form) */
+                width: 300px; 
+                margin: 0 auto; 
+                
+                /* BỔ SUNG CÁC THUỘC TÍNH TẠO KHUNG VÀ ĐỆM */
+                padding: 20px; /* Thêm đệm bên trong */
+                border: 1px solid #ccc; /* Thêm viền xám nhạt */
+                
+                /* Đặt lại căn chỉnh nội dung về trái trong form */
+                text-align: left; 
+            }
+            /* BỔ SUNG: CSS cho Nhãn và Trường nhập để căn chỉnh đẹp */
+            .login-form label {
+                display: inline-block;
+                width: 80px; /* Đặt width cho nhãn */
+                text-align: right; /* Căn nhãn sang phải */
+                margin-right: 10px;
+            }
+            .login-form input[type="text"],
+            .login-form input[type="password"] {
+                width: 180px; 
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            .login-form input[type="submit"] {
+                 /* Căn giữa nút bấm */
+                display: block;
+                margin: 10px auto 0 auto; 
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center-container">
+            <h2>Đăng nhập</h2>
+            
+            <form action="loginServlet" method="post" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

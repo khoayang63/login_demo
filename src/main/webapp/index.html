@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang Khởi đầu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            /* 1. RESET và BỐ CỤC CHUNG */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8; /* Nền nhẹ nhàng */
+                margin: 0;
+                padding: 0;
+                display: flex; /* Bật Flexbox để căn giữa theo cả 2 chiều */
+                justify-content: center; /* Căn giữa ngang */
+                align-items: center; /* Căn giữa dọc */
+                min-height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+            }
+
+            /* 2. CONTAINER CHÍNH */
+            .main-container {
+                width: 300px;
+                padding: 30px;
+                background-color: #ffffff;
+                border-radius: 10px; /* Bo góc */
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+                text-align: center; /* Căn giữa nội dung bên trong */
+            }
+            
+            /* 3. ĐỊNH DẠNG NÚT BẤM (Liên kết) */
+            .main-container a {
+                display: block; /* Biến liên kết thành khối để chiếm dòng */
+                text-decoration: none; /* Bỏ gạch chân */
+                margin-top: 15px; /* Khoảng cách giữa các nút */
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
+
+            /* Màu cho nút ĐĂNG NHẬP */
+            .login-btn {
+                background-color: #007bff;
+                color: white;
+            }
+            .login-btn:hover {
+                background-color: #0056b3;
+            }
+
+            /* Màu cho nút ĐĂNG KÝ */
+            .signup-btn {
+                background-color: #28a745;
+                color: white;
+            }
+            .signup-btn:hover {
+                background-color: #1e7e34;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <h2>Chào mừng!</h2>
+            <p>Vui lòng chọn một tùy chọn:</p>
+            
+            <a href="./Login.html" class="login-btn">Đăng nhập</a>
+            <a href="./Signup.html" class="signup-btn">Đăng ký</a>
+            
+        </div>
+        
+    </body>
+</html>
